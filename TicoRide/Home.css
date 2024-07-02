@@ -135,6 +135,7 @@ a:hover {
 
 .footer {
     background-color: white;
+    color: gray;
     padding: 10px;
     text-align: center;
     position: block;
