@@ -16,7 +16,8 @@ body {
     margin-top: 20px;
     flex-direction: column;
 }
-.title{
+
+.title {
     font-weight: bold;
     color: white;
 }
@@ -35,7 +36,6 @@ body {
     background-color: yellow;
     border-radius: 5px;
     order: -1;
-    /* Asegura que siempre esté al principio */
 }
 
 .container1 {
@@ -66,7 +66,6 @@ ul {
     border-radius: 5px;
 }
 
-/* Flexbox layout for containers */
 .principal1 {
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +73,6 @@ ul {
     position: relative;
 }
 
-/* Estilos para pantallas menores a 600px */
 @media (max-width: 600px) {
 
     .container1,
@@ -84,13 +82,13 @@ ul {
         width: 100%;
         border-radius: 5px;
     }
-    .container{
+
+    .container {
         font-size: 24px;
         padding: 10px;
     }
 }
 
-/* Estilos para pantallas entre 600px y 935px */
 @media (min-width: 601px) and (max-width: 935px) {
 
     .container1,
@@ -109,26 +107,28 @@ ul {
     flex-wrap: nowrap;
 }
 
-/* Estilos para pantallas mayores a 936px */
 @media (min-width: 936px) {
     .principal1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly; /* Distribuye el espacio entre los elementos */
+        justify-content: space-evenly;
     }
-    
-    .container1, .container2, .container3{
+
+    .container1,
+    .container2,
+    .container3 {
         width: 40%;
         border-radius: 5px;
     }
+
     .container4 {
         width: 32%;
         border-radius: 5px;
-        align-self: flex-end; /* Alinea al final verticalmente */
+        align-self: flex-end;
         margin-left: 68%;
     }
 }
-/* Mostrar combobox en pantallas mayores a 600px */
+
 @media (min-width: 600px) {
     .combobox {
         display: block;
